@@ -12,3 +12,8 @@ FROM
 	(SELECT City, ROW_NUMBER() OVER(ORDER BY LEN(City) DESC, City) as RowNumber 
 	 FROM Station) st
 Where st.RowNumber = 1
+
+
+--Here is another solution
+ SELECT top 1 City, LEN(City) FROM Station ORDER BY LEN(City), City;
+ SELECT top 1 City, LEN(City) FROM Station ORDER BY LEN(City) DESC, City;
