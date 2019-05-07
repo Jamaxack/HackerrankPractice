@@ -1,5 +1,5 @@
 # HackerrankPractice
 
 PRACTICE:
-SQL: MS SQL Server
-Problem Solving: C#
+
+MS SQL Server Problem Solving
